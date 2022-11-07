@@ -4,7 +4,9 @@ using UnityEngine;
 
 namespace tristan
 {
-
+    /// <summary>
+    /// Airplane controller 2d
+    /// </summary>
     public class AirPlaneController2D : MonoBehaviour
     {
         [Header("Move Speed")]
@@ -25,8 +27,16 @@ namespace tristan
 
         private void Update()
         {
-            float v = Input.GetAxis("Vertical");
+            //UpDown WS vertical
+            //RightLeft AD horizontal
 
+            // Up W +1
+            // Down S -1
+            // No press 0
+            float v = Input.GetAxis("Vertical");
+            // Right D +1
+            // Left A -1
+            // No press 0
             float h = Input.GetAxis("Horizontal");
 
 
@@ -35,18 +45,19 @@ namespace tristan
                 speedVertical * Time.deltaTime * v,
                 0);
 
+            // if v greater than 0 replace image with up
             if (v > 0)
             {
                 print("go up");
                 spr.sprite = pictureUp;
             }
-
+            // if v smaller than 0 replace image with down
             if (v < 0)
             {
                 print("go down");
                 spr.sprite = pictureDown;
             }
-
+            // if it is equal to 0 replace it with middle
             if (v == 0)
             {
                 print("middle");
