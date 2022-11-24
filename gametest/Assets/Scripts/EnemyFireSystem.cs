@@ -20,5 +20,16 @@ namespace tristan
             InvokeRepeating("SpawnBullet", 0, interval);
         }
 
+        private void OnBecameVisible()
+        {
+            //delay repeated call method (method name,delay time, interval)
+            InvokeRepeating("SpawnBullet", 0, interval);
+        }
+
+        private void OnBecameInvisible()
+        {
+            Destroy(gameObject);
+        }
+
     }
 }

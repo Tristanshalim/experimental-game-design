@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2000669526670981667}
   - component: {fileID: -7872433267996208473}
   - component: {fileID: 8204269500222102086}
+  - component: {fileID: -1885038446588210583}
   m_Layer: 7
   m_Name: player bullet
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 12291d9aa888b41c58f66187eb386317, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -156,3 +157,17 @@ ConstantForce2D:
   m_Force: {x: 0, y: 0}
   m_RelativeForce: {x: 20, y: 0}
   m_Torque: 0
+--- !u!114 &-1885038446588210583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3406372385008781603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6a6b7b815430a49b0fd933b3f288c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameTarget: enemy bullet
+  prefabExplosion: {fileID: 4669064174774744609, guid: 3787c28fb26607245b9d4ba64fa1d4a9, type: 3}

@@ -109,7 +109,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 66e2bee867275422c9de0a02da52d95b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -192,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabBullet: {fileID: 3406372385008781603, guid: f7b4352bce9e8e047a333276eb82eb55, type: 3}
   pointSpawn: {fileID: 865090013280261881}
+  soundFire: {fileID: 8300000, guid: 033b1daf4512444018111f90f909d172, type: 3}
   interval: 3
 --- !u!114 &3297171437158846777
 MonoBehaviour:
@@ -207,3 +208,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameTarget: player bullet
   prefabExplosion: {fileID: 1930649787168915034, guid: 53032903a251b2441ad9459c58fa9a79, type: 3}
+  soundHit: {fileID: 8300000, guid: 5a734bcdccebe4d0aa169e4bc43d5210, type: 3}
+  soundExplosion: {fileID: 8300000, guid: eeac7ff7e4ad44587b11429a7e7b8fc1, type: 3}
